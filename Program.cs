@@ -1,17 +1,7 @@
-﻿using Fundamentos_C_.models;
+﻿using Fundamentos_C_.Models;
 
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Dilan";
-pessoa1.Idade = 22;
-pessoa1.Apresentar();
+Pessoa p1 = new Pessoa();
 
-/*Livraria livraria1 = new Livraria();
-livraria1.InStock = 0;
-livraria1.Book = "Clean Code";
-livraria1.BuyBook();
-*/
-
-
-Calculadora calc = new Calculadora();
-
-calc.Potencia(3,3);
+p1.Nome = "Dilan";
+p1.Idade = 22;
+p1.Apresentar();
