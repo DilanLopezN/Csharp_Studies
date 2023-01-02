@@ -44,7 +44,7 @@ namespace Fundamentos_C_.Models
 
         public string SobreNome { get; set; }
 
-        public string NomeCompleto => $"{Nome} {SobreNome}";
+        public string NomeCompleto => $"{Nome} {SobreNome}".ToUpper();
 
         public void Apresentar()
         {
