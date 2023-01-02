@@ -10,6 +10,7 @@ namespace Fundamentos_C_.Models
         private string _nome;
         private int _idade;
 
+
         public string Nome 
         {
             get => _nome.ToUpper();
@@ -25,6 +26,8 @@ namespace Fundamentos_C_.Models
             }
          }
         public int Idade 
+
+
             {
                 get => _idade;
 
@@ -39,9 +42,13 @@ namespace Fundamentos_C_.Models
                 } 
              }
 
+        public string SobreNome { get; set; }
+
+        public string NomeCompleto => $"{Nome} {SobreNome}";
+
         public void Apresentar()
         {
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+            Console.WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
         }
     }
 }
