@@ -1,14 +1,8 @@
 ﻿using Fundamentos_C_.Models;
 
-Pessoa p1 = new Pessoa();
+Pessoa p1 = new Pessoa(nome: "Dilan", sobrenome: "Lopez");
 
-p1.Nome = "Dilan";
-p1.SobreNome = "Lopez";
-
-Pessoa p2 = new Pessoa();
-
-p2.Nome = "Elon";
-p2.SobreNome = "Musk";
+Pessoa p2 = new Pessoa(nome: "Elon", sobrenome: "Musk"); 
 
 Curso cursoDeingles = new Curso();
 cursoDeingles.Nome = "Inglês avançado";
