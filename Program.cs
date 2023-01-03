@@ -8,9 +8,11 @@ Curso cursoDeingles = new Curso();
 cursoDeingles.Nome = "Inglês avançado";
 cursoDeingles.Alunos = new List<Pessoa>();
 
+cursoDeingles.InformacoesDoCurso();
 cursoDeingles.AdicionarAluno(p1);
 cursoDeingles.AdicionarAluno(p2);
 cursoDeingles.ListarAlunos();
+
 
 
 //p1.Idade = 22;
