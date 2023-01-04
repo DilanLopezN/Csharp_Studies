@@ -72,4 +72,20 @@ foreach(int item in pilha)
 {
   Console.WriteLine($"Ordem atual Nº {item}");
 }
+// Dictionary
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("BH", "Bahia");
+estados.Add("MG", "Minas Gerais");
+foreach(KeyValuePair<string, string> estado in estados)
+{
+  Console.WriteLine($"Chave: {estado.Key}, valor: {estado.Value}");
+}
+estados.Remove("BH");
 
+estados["SP"] = "São Paulo Capital";
+
+foreach(KeyValuePair<string, string> estado in estados)
+{
+  Console.WriteLine($"Chave: {estado.Key}, valor: {estado.Value}");
+}
