@@ -15,9 +15,24 @@ cursoDeingles.ListarAlunos();
 //p1.Idade = 22;
 //p1.Apresentar();
 
-// leitura de arquivos
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+// leitura de arquivos disparando erro com caminho de arquivo errado para exceção 
+try
+//tratando exceção
+{
+string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
 foreach(string linha in linhas) 
 {
   Console.WriteLine(linha);
 }
+} 
+//exceção especifica
+catch (FileNotFoundException exception) 
+{
+  Console.WriteLine($"Exceção especifica {exception.Message}");
+}
+// generica
+catch(Exception ex)
+{
+  Console.WriteLine($"Ocorreu uma exceção genérica\n {ex.Message}");
+} 
+
