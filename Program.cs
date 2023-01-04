@@ -12,8 +12,12 @@ cursoDeingles.InformacoesDoCurso();
 cursoDeingles.AdicionarAluno(p1);
 cursoDeingles.AdicionarAluno(p2);
 cursoDeingles.ListarAlunos();
-
-
-
 //p1.Idade = 22;
 //p1.Apresentar();
+
+// leitura de arquivos
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+foreach(string linha in linhas) 
+{
+  Console.WriteLine(linha);
+}
