@@ -58,3 +58,18 @@ foreach(int item in fila)
 {
   Console.WriteLine($"Fila atual Nº {item}");
 }
+// Collection Stack
+Stack<int> pilha = new Stack<int>();
+pilha.Push(3);
+pilha.Push(6);
+pilha.Push(9);
+foreach(int item in pilha)
+{
+  Console.WriteLine($"Ordem da pilha {item}");
+}
+Console.WriteLine($"Saiu da ordem {pilha.Pop()}");
+foreach(int item in pilha)
+{
+  Console.WriteLine($"Ordem atual Nº {item}");
+}
+
