@@ -35,4 +35,11 @@ catch(Exception ex)
 {
   Console.WriteLine($"Ocorreu uma exceção genérica\n {ex.Message}");
 } 
+finally
+{
+  Console.WriteLine("Leitura concluida");
+}
 
+// tratamento de exceção com throw
+
+new ExemploExcecao().Metodo1();
