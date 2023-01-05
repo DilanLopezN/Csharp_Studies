@@ -2,7 +2,7 @@
 
 Pessoa p1 = new Pessoa(nome: "Dilan", sobrenome: "Lopez");
 
-Pessoa p2 = new Pessoa(nome: "Elon", sobrenome: "Musk"); 
+Pessoa p2 = new Pessoa(nome: "Elon", sobrenome: "Musk");
 
 Curso cursoDeingles = new Curso();
 cursoDeingles.Nome = "Inglês avançado";
@@ -19,22 +19,22 @@ cursoDeingles.ListarAlunos();
 try
 //tratando exceção
 {
-string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
-foreach(string linha in linhas) 
-{
-  Console.WriteLine(linha);
+  string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+  foreach (string linha in linhas)
+  {
+    Console.WriteLine(linha);
+  }
 }
-} 
 //exceção especifica
-catch (FileNotFoundException exception) 
+catch (FileNotFoundException exception)
 {
   Console.WriteLine($"Exceção especifica {exception.Message}");
 }
 // generica
-catch(Exception ex)
+catch (Exception ex)
 {
   Console.WriteLine($"Ocorreu uma exceção genérica\n {ex.Message}");
-} 
+}
 finally
 {
   Console.WriteLine("Leitura concluida");
@@ -49,12 +49,12 @@ Queue<int> fila = new Queue<int>();
 fila.Enqueue(2);
 fila.Enqueue(4);
 fila.Enqueue(6);
-foreach(int item in fila)
+foreach (int item in fila)
 {
   Console.WriteLine($"Entrou na fila posição Nº {item}");
 }
 Console.WriteLine($"Saiu da Fila posição Nº {fila.Dequeue()}");
-foreach(int item in fila)
+foreach (int item in fila)
 {
   Console.WriteLine($"Fila atual Nº {item}");
 }
@@ -63,12 +63,12 @@ Stack<int> pilha = new Stack<int>();
 pilha.Push(3);
 pilha.Push(6);
 pilha.Push(9);
-foreach(int item in pilha)
+foreach (int item in pilha)
 {
   Console.WriteLine($"Ordem da pilha {item}");
 }
 Console.WriteLine($"Saiu da ordem {pilha.Pop()}");
-foreach(int item in pilha)
+foreach (int item in pilha)
 {
   Console.WriteLine($"Ordem atual Nº {item}");
 }
@@ -77,7 +77,7 @@ Dictionary<string, string> estados = new Dictionary<string, string>();
 estados.Add("SP", "São Paulo");
 estados.Add("BH", "Bahia");
 estados.Add("MG", "Minas Gerais");
-foreach(KeyValuePair<string, string> estado in estados)
+foreach (KeyValuePair<string, string> estado in estados)
 {
   Console.WriteLine($"Chave: {estado.Key}, valor: {estado.Value}");
 }
@@ -85,7 +85,7 @@ estados.Remove("BH");
 
 estados["SP"] = "São Paulo Capital";
 
-foreach(KeyValuePair<string, string> estado in estados)
+foreach (KeyValuePair<string, string> estado in estados)
 {
   Console.WriteLine($"Chave: {estado.Key}, valor: {estado.Value}");
 }

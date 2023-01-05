@@ -5,33 +5,33 @@ using System.Threading.Tasks;
 
 namespace Fundamentos_C_.Models
 {
-    public class ExemploExcecao
+  public class ExemploExcecao
+  {
+    public void Metodo1()
     {
-        public void Metodo1()
-        {
-            try
-            {
-             Metodo2();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine($"Exceção tratada {ex.Message}");
-            }
-        }
-
-         public void Metodo2()
-        {
-             Metodo3();
-        }
-
-         public void Metodo3()
-        {
-            Metodo4();
-        }
-
-         public void Metodo4()
-        {
-            throw new Exception("Ocorreu uma exceção");
-        }
+      try
+      {
+        Metodo2();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Exceção tratada {ex.Message}");
+      }
     }
+
+    public void Metodo2()
+    {
+      Metodo3();
+    }
+
+    public void Metodo3()
+    {
+      Metodo4();
+    }
+
+    public void Metodo4()
+    {
+      throw new Exception("Ocorreu uma exceção");
+    }
+  }
 }
