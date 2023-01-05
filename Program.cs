@@ -1,5 +1,22 @@
 ﻿using Fundamentos_C_.Models;
+Pessoa p1 = new Pessoa("Dilan", "Lopez");
+(string nome, string sobrenome) = p1;
 
+Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 Pessoa p1 = new Pessoa(nome: "Dilan", sobrenome: "Lopez");
 
 Pessoa p2 = new Pessoa(nome: "Elon", sobrenome: "Musk");
@@ -96,10 +113,11 @@ foreach (KeyValuePair<string, string> estado in estados)
 Console.WriteLine($"\n Id: {tupla.Item1}\n Nome: {tupla.Item2}\n Sobrenome: {tupla.Item3}\n Altura: {tupla.Item4}\n");
 // metodo com tupla
 LeituraArquivo arquivo = new LeituraArquivo();
-var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// descarte com " _ "
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 if (sucesso)
 {
-  Console.WriteLine($"Quantidade linhas do arquivo: {quantidadeLinhas}");
+  //Console.WriteLine($"Quantidade linhas do arquivo: {quantidadeLinhas}");
   foreach (string linha in linhasArquivo)
   {
     Console.WriteLine(linha);
@@ -109,3 +127,4 @@ else
 {
   Console.WriteLine("Não foi possivel ler o arquivo");
 }
+*/

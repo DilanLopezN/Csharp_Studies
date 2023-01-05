@@ -18,6 +18,12 @@ namespace Fundamentos_C_.Models
 
     }
 
+    public void Deconstruct(out string nome, out string sobrenome)
+    {
+      nome = Nome;
+      sobrenome = SobreNome;
+    }
+
     private string _nome;
     private int _idade;
 
@@ -61,5 +67,7 @@ namespace Fundamentos_C_.Models
     {
       Console.WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
     }
+
+
   }
 }
