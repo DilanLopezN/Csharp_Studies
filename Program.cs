@@ -93,4 +93,19 @@ foreach (KeyValuePair<string, string> estado in estados)
 
 // tuplas 
 (int, string, string, decimal) tupla = (1, "Dilan", "Lopez", 1.75M);
-Console.WriteLine($"\n Id: {tupla.Item1}\n Nome: {tupla.Item2}\n Sobrenome: {tupla.Item3}\n Altura: {tupla.Item4}");
+Console.WriteLine($"\n Id: {tupla.Item1}\n Nome: {tupla.Item2}\n Sobrenome: {tupla.Item3}\n Altura: {tupla.Item4}\n");
+// metodo com tupla
+LeituraArquivo arquivo = new LeituraArquivo();
+var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+if (sucesso)
+{
+  Console.WriteLine($"Quantidade linhas do arquivo: {quantidadeLinhas}");
+  foreach (string linha in linhasArquivo)
+  {
+    Console.WriteLine(linha);
+  }
+}
+else
+{
+  Console.WriteLine("Não foi possivel ler o arquivo");
+}
