@@ -4,7 +4,25 @@ Pessoa p1 = new Pessoa("Dilan", "Lopez");
 
 Console.WriteLine($"{nome} {sobrenome}");
 
+int numero = 20;
+bool ehPar = false;
 
+// com if térnario 
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+
+/*
+// sem if térnario
+if (numero % 2 == 0)
+{
+  Console.WriteLine($"O número {numero} é par");
+}
+else
+{
+  Console.WriteLine($"O número {numero}  é impar");
+}
+*/
 
 
 
