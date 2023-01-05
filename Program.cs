@@ -89,3 +89,8 @@ foreach(KeyValuePair<string, string> estado in estados)
 {
   Console.WriteLine($"Chave: {estado.Key}, valor: {estado.Value}");
 }
+
+
+// tuplas 
+(int, string, string, decimal) tupla = (1, "Dilan", "Lopez", 1.75M);
+Console.WriteLine($"\n Id: {tupla.Item1}\n Nome: {tupla.Item2}\n Sobrenome: {tupla.Item3}\n Altura: {tupla.Item4}");
