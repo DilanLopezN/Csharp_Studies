@@ -1,4 +1,5 @@
 ﻿using Fundamentos_C_.Models;
+using Newtonsoft.Json;
 Pessoa p1 = new Pessoa("Dilan", "Lopez");
 (string nome, string sobrenome) = p1;
 
@@ -10,6 +11,10 @@ bool ehPar = false;
 // com if térnario 
 ehPar = numero % 2 == 0;
 Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+Vendas v1 = new Vendas(1, "Material de escritório", 25.00M);
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+Console.WriteLine(serializado);
 
 
 /*
