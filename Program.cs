@@ -4,9 +4,9 @@ using Newtonsoft.Json;
 
 List<Vendas> listaVendas = new List<Vendas>();
 
-
-Vendas v1 = new Vendas(1, "Material de escritório", 25.00M);
-Vendas v2 = new Vendas(2, "Materia construção", 75.00M);
+DateTime dataAtual = DateTime.Now;
+Vendas v1 = new Vendas(1, "Material de escritório", 25.00M, dataAtual);
+Vendas v2 = new Vendas(2, "Materia construção", 75.00M, dataAtual);
 
 listaVendas.Add(v1);
 listaVendas.Add(v2);
