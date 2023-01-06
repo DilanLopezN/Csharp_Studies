@@ -1,6 +1,25 @@
 ﻿using Fundamentos_C_.Models;
 using Newtonsoft.Json;
-Pessoa p1 = new Pessoa("Dilan", "Lopez");
+
+
+List<Vendas> listaVendas = new List<Vendas>();
+
+
+Vendas v1 = new Vendas(1, "Material de escritório", 25.00M);
+Vendas v2 = new Vendas(2, "Materia construção", 75.00M);
+
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+File.WriteAllText("Arquivos/vendas.json", serializado);
+Console.WriteLine(serializado);
+
+
+
+
+
+
+/*Pessoa p1 = new Pessoa("Dilan", "Lopez");
 (string nome, string sobrenome) = p1;
 
 Console.WriteLine($"{nome} {sobrenome}");
@@ -11,10 +30,12 @@ bool ehPar = false;
 // com if térnario 
 ehPar = numero % 2 == 0;
 Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+*/
 
-Vendas v1 = new Vendas(1, "Material de escritório", 25.00M);
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
-Console.WriteLine(serializado);
+
+
+
+
 
 
 /*
