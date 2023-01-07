@@ -2,8 +2,13 @@
 using Newtonsoft.Json;
 
 
+var tipoAnonimo = new { Nome = "Dilan", Sobrenome = "Lopez", Altura = 1.75 };
 
+Console.WriteLine("Nome: " + tipoAnonimo.Nome);
+Console.WriteLine("Sobrenome: " + tipoAnonimo.Sobrenome);
+Console.WriteLine("Altura: " + tipoAnonimo.Altura);
 
+/*
 bool? desejaReceberEmail = null;
 if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
 {
@@ -13,6 +18,7 @@ else
 {
   Console.WriteLine("O usuário optou por não receber email.");
 }
+*/
 
 
 /*
