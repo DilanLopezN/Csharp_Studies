@@ -2,6 +2,20 @@
 using Newtonsoft.Json;
 
 
+
+
+bool? desejaReceberEmail = null;
+if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
+{
+  Console.WriteLine("O usuário optou por receber email.");
+}
+else
+{
+  Console.WriteLine("O usuário optou por não receber email.");
+}
+
+
+/*
 List<Vendas> listaVendas = new List<Vendas>();
 
 DateTime dataAtual = DateTime.Now;
@@ -13,7 +27,7 @@ listaVendas.Add(v2);
 string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 File.WriteAllText("Arquivos/vendas.json", serializado);
 Console.WriteLine(serializado);
-
+*/
 
 
 
