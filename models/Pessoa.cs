@@ -12,7 +12,7 @@ namespace ObjectOrientation.models
 
     public void Apresentar()
     {
-      Console.WriteLine("Nome: " + this.Nome);
+      Console.WriteLine($"Olá meu nome é {this.Nome} e tenho {this.Idade} anos");
     }
   }
 }
