@@ -5,6 +5,10 @@ using System;
 using ObjectOrientation.models;
 
 //Console.WriteLine("Hello, World!");
+var pess = new Pessoa();
+pess.Nome = "Vns";
+pess.Idade = 19;
+pess.Apresentar();
 
 var prof1 = new professor();
 
